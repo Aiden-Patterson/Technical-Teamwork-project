@@ -1,16 +1,19 @@
 #content {
     max-width: 1600px;
     margin: 0 auto;
-}
-
-body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+img{
+    max-width: 400px;
+}
+body {
     background-color: #fff3b8;
 }
+
 .seasonal_favorites{
-    max-width: 400px;
     grid-row: 2/3;
+    grid-column: 1/2;
 }
 
 .popular-combos{
@@ -21,9 +24,39 @@ body {
 
 .normal-flavors{
     max-width: 400px;
+    grid-row:2/3;
+    grid-column: 4;
 }
-.extras{
+.extras {
     max-width: 400px;
+}
+
+/* Bottom Pics */
+.extras-pic {
+    grid-column: 1;
+    margin-left: 150px;
+}
+
+.extras {
+    
+}
+
+.extras-msg {
+    text-align: center;
+}
+
+.prices-pic {
+    grid-column: 4;
+    margin-right: 150px;
+}
+
+.prices {
+    width: 600px;
+    height: 600px;
+}
+
+.prices-msg {
+    text-align: center;
 }
 
 /* Header */
@@ -31,13 +64,12 @@ header {
     background-color: #c2f2d0;
     display: grid;
     grid-template-columns: 150px auto;
-    position: absolute;
-    left: 0;
-    right: 0;
+    width: 100%;
+    grid-column: 1/5;
 }
 
 
-#logo_link {
+.logo_link {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
@@ -66,23 +98,33 @@ nav a:hover {
 }
 /* Header */
 
-footer{
-    background-color: #c2f2d0;
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* Bottom Pics */
+.extras {
+    grid-column: 3;
+    grid-row: 1;
 }
 
+footer{
+    grid-column: 1/5;
+    background-color: #c2f2d0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-row:6;
+    align-content: center;
+}
+
+footer nav{
+    grid-column: 1/2;
+}
 
 
 .social{
-    
+    grid-column: 3/4;
 }
 
-.contactus p{
-color: white;
+.contactUs {
+    grid-column: 2/3;
 }
 
 @media screen and (max-width: 900px) {
