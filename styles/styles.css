@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Inknut+Antiqua:wght@700&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 img{
     max-width: 400px;
@@ -11,9 +13,40 @@ body {
     background-color: #fff3b8;
 }
 
-.seasonal_favorites{
+.seasonal_favorites {
     grid-row: 2/3;
     grid-column: 1/2;
+}
+
+.seasonal_favorites_img {
+    width: 400px;
+    height: 530px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.popular-combos_img {
+    width: 400px;
+    height: 530px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.normal-flavors_img {
+    width: 400px;
+    height: 530px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;   
+}
+
+.extras {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black; 
+}
+
+.prices {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #fff3b8; 
 }
 
 .popular-combos{
@@ -24,8 +57,9 @@ body {
 
 .normal-flavors{
     max-width: 400px;
-    grid-row:2/3;
+    grid-row: 2/3;
     grid-column: 4;
+    margin-left: 150px;
 }
 .extras {
     max-width: 400px;
@@ -37,12 +71,24 @@ body {
     margin-left: 150px;
 }
 
-.extras {
-    
+.SF {
+    margin-left: 100px;
+    font-family: 'Eczar', serif;
+}
+
+.PC {
+    text-align: center;
+    font-family: 'Eczar', serif;
+}
+
+.F {
+    text-align: center;
+    font-family: 'Eczar', serif;
 }
 
 .extras-msg {
     text-align: center;
+    font-family: 'Eczar', serif;
 }
 
 .prices-pic {
@@ -57,6 +103,7 @@ body {
 
 .prices-msg {
     text-align: center;
+    font-family: 'Eczar', serif;
 }
 
 /* Header */
@@ -66,6 +113,9 @@ header {
     grid-template-columns: 150px auto;
     width: 100%;
     grid-column: 1/5;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-family: 'Inknut Antiqua', serif;
 }
 
 
@@ -109,9 +159,11 @@ footer{
     background-color: #c2f2d0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+    align-items: center;
     grid-row:6;
     align-content: center;
+    font-family: 'Inknut Antiqua', serif;
+    border-radius: 5px;
 }
 
 footer nav{
@@ -120,13 +172,29 @@ footer nav{
 
 
 .social{
-    grid-column: 3/4;
+    grid-column: 1/2;
+    text-decoration: none;
+}
+.social a{
+    text-decoration: none;
 }
 
 .contactUs {
     grid-column: 2/3;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-
+.phone{
+    grid-column: 2/3;
+    font-size: small;
+}
+.email{
+    grid-column: 3/4;
+    font-size: small;
+}
+.address{
+    grid-column: 4/5;
+    font-size: small;
+}
 @media screen and (max-width: 900px) {
     nav, footer {
         flex-direction: column;
